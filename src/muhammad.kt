@@ -5,8 +5,9 @@ fun showLikes(likesCount: Int)= println(getLikesDetails(likesCount))
 fun sayHello(name:String="Friend")="Hello $name"
 fun showSayHelloMessage(name: String)= print(sayHello(name))
 fun main(){
-    var checker:Boolean=false
+    var checker:Boolean=true
     var names= listOf("Muhammad","Bassem")
+
     var inputName:String= readLine()!!
     for (element in names)
         if (element==inputName) checker=true
