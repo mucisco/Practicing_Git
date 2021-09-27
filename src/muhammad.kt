@@ -1,3 +1,5 @@
+import model.post
+
 //region functions
 fun isEven(inputNumber:Int)=inputNumber%2==0 //this function used to know if the number is even or not
 fun isPositive(inputNumber: Int)=inputNumber>=0 //this function used to know if the number is positive or not
@@ -14,7 +16,11 @@ fun getNameStartWith(names:List<String>,firstChar:Char):List<String>{
     return filteredList
 }
 fun main(){
-    var friends= mutableListOf("Mustafa","Ahmed","Ali")
+        val myPost=post()
+        println(myPost.likesCount)
+         myPost.like()
+         myPost.like()
+        println(myPost.likesCount)
 }
 
 
