@@ -1,8 +1,8 @@
-fun isEven(inputNumber:Int)=inputNumber%2==0
-fun isPositive(inputNumber: Int)=inputNumber>=0
-fun isGreater(inputNumber: Int,secondInputNumber:Int)=inputNumber>secondInputNumber
-fun getFriendsDetails(friendsList:List<String>)="You have ${friendsList.size} friends"
-fun getNameStartWith(names:List<String>,firstChar:Char):List<String>{
+fun isEven(inputNumber:Int)=inputNumber%2==0 //this function used to know if the number is even or not
+fun isPositive(inputNumber: Int)=inputNumber>=0 //this function used to know if the number is even or not 
+fun isGreater(inputNumber: Int,secondInputNumber:Int)=inputNumber>secondInputNumber //this function used to know if the 1st no. is greater than 2nd no,
+fun getFriendsDetails(friendsList:List<String>)="You have ${friendsList.size} friends" //this funtion used to display number of friends
+fun getNameStartWith(names:List<String>,firstChar:Char):List<String>{ //filter function
      var filteredList= mutableListOf<String>()
     names.forEach(){
         if(it.get(0)=='A')
