@@ -1,3 +1,4 @@
+import model.User
 import model.post
 
 //region functions
@@ -16,11 +17,9 @@ fun getNameStartWith(names:List<String>,firstChar:Char):List<String>{
     return filteredList
 }
 fun main(){
-        val myPost=post()
-        println(myPost.likesCount)
-         myPost.like()
-         myPost.like()
-        println(myPost.likesCount)
+        val myFirstUser=User(username = "Muhammad", age = 21, yearOfBirth = 2000)
+
+
 }
 
 
