@@ -4,9 +4,10 @@ fun isGreater(inputNumber: Int,secondInputNumber:Int)=inputNumber>secondInputNum
 fun getFriendsDetails(friendsList:List<String>)="You have ${friendsList.size} friends"
 fun getNameStartWith(names:List<String>,firstChar:Char):List<String>{
      var filteredList= mutableListOf<String>()
-    for (firend in names)
-        if(firend.get(0)==firstChar)
-            filteredList.add(firend)
+    names.forEach(){
+        if(it.get(0)=='A')
+            filteredList.add(it)
+    }
     return filteredList
 }
 fun main(){
