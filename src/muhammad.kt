@@ -1,5 +1,5 @@
-fun isEven(inputNumber:Int)=if(inputNumber%2==0) true else false
-fun isPositive(inputNumber: Int)=if(inputNumber>=0) true else false
+fun isEven(inputNumber:Int)=inputNumber%2==0
+fun isPositive(inputNumber: Int)=inputNumber>=0
 
 fun main(){
     var number=8
