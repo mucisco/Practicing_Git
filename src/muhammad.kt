@@ -12,7 +12,7 @@ fun getNameStartWith(names:List<String>,firstChar:Char):List<String>{ //filter f
 }
 fun main(){
     var friends= mutableListOf("Mustafa","Ahmed","Ali")
-
+ //test
 }
 
 
