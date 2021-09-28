@@ -1,6 +1,6 @@
 import model.Settings
 import model.User
-import model.post
+
 //region functions
 fun isEven(inputNumber:Int)=inputNumber%2==0 //this function used to know if the number is even or not
 fun isPositive(inputNumber: Int)=inputNumber>=0 //this function used to know if the number is positive or not
