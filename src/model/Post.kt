@@ -1,6 +1,6 @@
 package model
 
-class Post {
+open class Post {
     var userName:String=""
     var content=""
 
