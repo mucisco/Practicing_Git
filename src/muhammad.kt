@@ -1,3 +1,4 @@
+import model.Post
 import model.Settings
 import model.User
 
@@ -26,13 +27,17 @@ fun enterCity()=print("Enter your city (optional): ")
 //endregion
 
 fun main(){
-        val user=User("Muhammad",2000,"Baghdad")
-        println("user: ${user.name}")
-        println("language: ${Settings.language}")
-        println("Theme: ${Settings.theme}")
-        Settings.userLogOut(user)
+        var post=Post()
 
+     post.addComment(" حبيبي منور")
+        post.addComment("هاي مقتنع بروحك ؟")
+        post.addComment("منور")
 
+        post.like()
+        println(post.likeCount)
+        println(post.commentsCount)
+        println("${post.comments}")
+        post.toString()
 }
 
 

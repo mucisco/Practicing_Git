@@ -1,6 +1,6 @@
 package model
 
-class ImagePost:Post() {
+class ImagePost(userName:String,content:String):Post( userName, content) {
     var imageLink:String=""
 
 
