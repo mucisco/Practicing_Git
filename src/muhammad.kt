@@ -1,3 +1,4 @@
+import model.ImagePost
 import model.Post
 import model.Settings
 import model.User
@@ -27,9 +28,10 @@ fun enterCity()=print("Enter your city (optional): ")
 //endregion
 
 fun main(){
-        var post=Post()
+        var user=User("Muhammad",2000)
+        var post=ImagePost(user.name,"Nothing")
 
-     post.addComment(" حبيبي منور")
+        post.addComment(" حبيبي منور")
         post.addComment("هاي مقتنع بروحك ؟")
         post.addComment("منور")
 
@@ -37,7 +39,10 @@ fun main(){
         println(post.likeCount)
         println(post.commentsCount)
         println("${post.comments}")
-        post.toString()
+        post.printThis()
+}
+fun ImagePost.printThis(){
+    println(this.likeCount)
 }
 
 
