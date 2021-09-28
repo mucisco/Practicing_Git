@@ -29,6 +29,7 @@ fun enterCity()=print("Enter your city (optional): ")
 
 fun main(){
         var user=User("Muhammad",2000)
+
         var post=ImagePost(user.name,"Nothing")
 
         post.addComment(" حبيبي منور")
