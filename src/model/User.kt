@@ -2,7 +2,7 @@ package model
 class User(var name: String, var yearOfBirth: Int, city: String?=null) {
        var age:Int
        private set
-      var  CURRENT_YEAR = 2021
+      var  CURRENT_YEAR = Calendar.getInstance().get(Calendar.YEAR)
       init {
         age=CURRENT_YEAR-yearOfBirth
           usersCount++
